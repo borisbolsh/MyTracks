@@ -1,4 +1,5 @@
 import UIKit
+import Inject
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				} else {
 						window?.backgroundColor = .white
 				}
-				window?.rootViewController = ViewController()
+				let viewController = Inject.ViewControllerHost(ViewController())
+				window?.rootViewController = viewController
 
 				return true
 		}
