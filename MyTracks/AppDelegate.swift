@@ -1,5 +1,4 @@
 import UIKit
-import Inject
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				} else {
 						window?.backgroundColor = .white
 				}
-				let viewController = Inject.ViewControllerHost(ViewController())
-				window?.rootViewController = viewController
+			
+				window?.rootViewController = TabBarViewController()
 
 				return true
 		}

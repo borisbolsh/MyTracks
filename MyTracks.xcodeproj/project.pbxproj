@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4503E7B3284CDCC9004B1917 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4503E7B2284CDCC9004B1917 /* Typography.swift */; };
+		4503E7B5284CE625004B1917 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4503E7B4284CE625004B1917 /* Icons.swift */; };
 		4529AEA7283D63E500513023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529AEA6283D63E500513023 /* AppDelegate.swift */; };
 		4529AEAB283D63E500513023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529AEAA283D63E500513023 /* ViewController.swift */; };
 		4529AEB0283D63E600513023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4529AEAF283D63E600513023 /* Assets.xcassets */; };
 		4529AEB3283D63E600513023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4529AEB1283D63E600513023 /* LaunchScreen.storyboard */; };
 		4529AEBF283D725300513023 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529AEBE283D725300513023 /* TabBarViewController.swift */; };
-		45FA1C90284B0B2D0001EB22 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 45FA1C8F284B0B2D0001EB22 /* Inject */; };
-		45FA1C93284B0BB10001EB22 /* HotReloading in Frameworks */ = {isa = PBXBuildFile; productRef = 45FA1C92284B0BB10001EB22 /* HotReloading */; };
+		45C2729B284CA38900C3EB8B /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2729A284CA38900C3EB8B /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4503E7B2284CDCC9004B1917 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		4503E7B4284CE625004B1917 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		4529AEA3283D63E500513023 /* MyTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4529AEA6283D63E500513023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4529AEAA283D63E500513023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		4529AEB2283D63E600513023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4529AEB4283D63E600513023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4529AEBE283D725300513023 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		45C2729A284CA38900C3EB8B /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,8 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FA1C93284B0BB10001EB22 /* HotReloading in Frameworks */,
-				45FA1C90284B0B2D0001EB22 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +62,6 @@
 			children = (
 				4529AEA6283D63E500513023 /* AppDelegate.swift */,
 				45FCC545284BFEAF0067FE19 /* Theme */,
-				45FCC543284BCD010067FE19 /* Onboarding */,
 				45FCC544284BCD450067FE19 /* Modules */,
 				4529AEBA283D64AB00513023 /* Files */,
 			);
@@ -87,6 +88,7 @@
 		45FCC544284BCD450067FE19 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				45FCC543284BCD010067FE19 /* Onboarding */,
 				4529AEAA283D63E500513023 /* ViewController.swift */,
 				4529AEBE283D725300513023 /* TabBarViewController.swift */,
 			);
@@ -96,6 +98,9 @@
 		45FCC545284BFEAF0067FE19 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				45C2729A284CA38900C3EB8B /* ColorPalette.swift */,
+				4503E7B2284CDCC9004B1917 /* Typography.swift */,
+				4503E7B4284CE625004B1917 /* Icons.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -117,8 +122,6 @@
 			);
 			name = MyTracks;
 			packageProductDependencies = (
-				45FA1C8F284B0B2D0001EB22 /* Inject */,
-				45FA1C92284B0BB10001EB22 /* HotReloading */,
 			);
 			productName = MyTracks;
 			productReference = 4529AEA3283D63E500513023 /* MyTracks.app */;
@@ -149,8 +152,6 @@
 			);
 			mainGroup = 4529AE9A283D63E500513023;
 			packageReferences = (
-				45FA1C8E284B0B2D0001EB22 /* XCRemoteSwiftPackageReference "Inject" */,
-				45FA1C91284B0BB10001EB22 /* XCRemoteSwiftPackageReference "HotReloading" */,
 			);
 			productRefGroup = 4529AEA4283D63E500513023 /* Products */;
 			projectDirPath = "";
@@ -178,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4503E7B3284CDCC9004B1917 /* Typography.swift in Sources */,
 				4529AEAB283D63E500513023 /* ViewController.swift in Sources */,
+				4503E7B5284CE625004B1917 /* Icons.swift in Sources */,
 				4529AEBF283D725300513023 /* TabBarViewController.swift in Sources */,
 				4529AEA7283D63E500513023 /* AppDelegate.swift in Sources */,
+				45C2729B284CA38900C3EB8B /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,38 +416,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		45FA1C8E284B0B2D0001EB22 /* XCRemoteSwiftPackageReference "Inject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		45FA1C91284B0BB10001EB22 /* XCRemoteSwiftPackageReference "HotReloading" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/johnno1962/HotReloading.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		45FA1C8F284B0B2D0001EB22 /* Inject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 45FA1C8E284B0B2D0001EB22 /* XCRemoteSwiftPackageReference "Inject" */;
-			productName = Inject;
-		};
-		45FA1C92284B0BB10001EB22 /* HotReloading */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 45FA1C91284B0BB10001EB22 /* XCRemoteSwiftPackageReference "HotReloading" */;
-			productName = HotReloading;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4529AE9B283D63E500513023 /* Project object */;
 }
