@@ -1,28 +1,32 @@
 import UIKit
 
 final class TabBarViewController: UITabBarController {
-		override func viewDidLoad() {
-				super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		configureViewControllers()
+		tabBarController?.tabBar.barTintColor = UIColor.white
+	}
 
-				guard let searchIcon = Icons.search else {
-					return
-				}
+	private func configureViewControllers() {
+		let tasks = TasksViewController()
+		let nav1 = templateNavigationController(image: Icons.Tab.tasks, rootViewController: tasks)
 
-				viewControllers = [
-					generateViewController(rootViewController: ViewController(), image: searchIcon, title: "Search")
-				]
-		}
+		let addTask = AddTaskViewController()
+		let nav2 = templateNavigationController(image: Icons.Tab.addTask, rootViewController: addTask)
 
-		private func generateViewController(
-			rootViewController: UIViewController,
-			image: UIImage,
-			title: String
-		) -> UIViewController {
-				let navigationVC = UINavigationController(rootViewController: rootViewController)
-				navigationVC.tabBarItem.image = image
-				navigationVC.tabBarItem.title = title
-				rootViewController.navigationItem.title = title
-				navigationVC.navigationBar.prefersLargeTitles = true
-				return navigationVC
-		}
+		let statictics = ViewController()
+		let nav3 = templateNavigationController(image: Icons.Tab.statistics, rootViewController: statictics)
+
+		viewControllers = [nav1, nav2, nav3]
+	}
+
+	private func templateNavigationController(
+		image: UIImage?,
+		rootViewController: UIViewController
+	) -> UINavigationController {
+		let nav = UINavigationController(rootViewController: rootViewController)
+		nav.tabBarItem.image = image
+		nav.navigationBar.barTintColor = .white
+		return nav
+	}
 }

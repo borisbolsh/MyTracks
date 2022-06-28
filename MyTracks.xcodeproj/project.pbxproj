@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45005E72286B9FDB00A192A5 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45005E71286B9FDB00A192A5 /* TasksViewController.swift */; };
+		45005E75286BA03E00A192A5 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45005E74286BA03E00A192A5 /* AddTaskViewController.swift */; };
+		45005E78286BA44700A192A5 /* StaticticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45005E77286BA44700A192A5 /* StaticticsViewController.swift */; };
 		4503E7B3284CDCC9004B1917 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4503E7B2284CDCC9004B1917 /* Typography.swift */; };
 		4503E7B5284CE625004B1917 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4503E7B4284CE625004B1917 /* Icons.swift */; };
 		4529AEA7283D63E500513023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529AEA6283D63E500513023 /* AppDelegate.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45005E71286B9FDB00A192A5 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		45005E74286BA03E00A192A5 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		45005E77286BA44700A192A5 /* StaticticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticticsViewController.swift; sourceTree = "<group>"; };
 		4503E7B2284CDCC9004B1917 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		4503E7B4284CE625004B1917 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		4529AEA3283D63E500513023 /* MyTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45005E70286B9FB400A192A5 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				45005E71286B9FDB00A192A5 /* TasksViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		45005E73286BA02200A192A5 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				45005E74286BA03E00A192A5 /* AddTaskViewController.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		45005E76286BA43300A192A5 /* Statictics */ = {
+			isa = PBXGroup;
+			children = (
+				45005E77286BA44700A192A5 /* StaticticsViewController.swift */,
+			);
+			path = Statictics;
+			sourceTree = "<group>";
+		};
 		4529AE9A283D63E500513023 = {
 			isa = PBXGroup;
 			children = (
@@ -78,18 +108,13 @@
 			path = Files;
 			sourceTree = "<group>";
 		};
-		45FCC543284BCD010067FE19 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
 		45FCC544284BCD450067FE19 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				45FCC543284BCD010067FE19 /* Onboarding */,
 				4529AEAA283D63E500513023 /* ViewController.swift */,
+				45005E70286B9FB400A192A5 /* Tasks */,
+				45005E73286BA02200A192A5 /* AddTask */,
+				45005E76286BA43300A192A5 /* Statictics */,
 				4529AEBE283D725300513023 /* TabBarViewController.swift */,
 			);
 			path = Modules;
@@ -180,8 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4503E7B3284CDCC9004B1917 /* Typography.swift in Sources */,
+				45005E78286BA44700A192A5 /* StaticticsViewController.swift in Sources */,
+				45005E75286BA03E00A192A5 /* AddTaskViewController.swift in Sources */,
 				4529AEAB283D63E500513023 /* ViewController.swift in Sources */,
 				4503E7B5284CE625004B1917 /* Icons.swift in Sources */,
+				45005E72286B9FDB00A192A5 /* TasksViewController.swift in Sources */,
 				4529AEBF283D725300513023 /* TabBarViewController.swift in Sources */,
 				4529AEA7283D63E500513023 /* AppDelegate.swift in Sources */,
 				45C2729B284CA38900C3EB8B /* ColorPalette.swift in Sources */,
