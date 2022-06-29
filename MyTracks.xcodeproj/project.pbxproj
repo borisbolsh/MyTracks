@@ -12,6 +12,7 @@
 		45005E78286BA44700A192A5 /* StaticticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45005E77286BA44700A192A5 /* StaticticsViewController.swift */; };
 		4503E7B3284CDCC9004B1917 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4503E7B2284CDCC9004B1917 /* Typography.swift */; };
 		4503E7B5284CE625004B1917 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4503E7B4284CE625004B1917 /* Icons.swift */; };
+		45280F01286C212A00C4EAF1 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45280F00286C212A00C4EAF1 /* Localization.swift */; };
 		4529AEA7283D63E500513023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529AEA6283D63E500513023 /* AppDelegate.swift */; };
 		4529AEAB283D63E500513023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529AEAA283D63E500513023 /* ViewController.swift */; };
 		4529AEB0283D63E600513023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4529AEAF283D63E600513023 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		45005E77286BA44700A192A5 /* StaticticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticticsViewController.swift; sourceTree = "<group>"; };
 		4503E7B2284CDCC9004B1917 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		4503E7B4284CE625004B1917 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		45280F00286C212A00C4EAF1 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		4529AEA3283D63E500513023 /* MyTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4529AEA6283D63E500513023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4529AEAA283D63E500513023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				45C2729A284CA38900C3EB8B /* ColorPalette.swift */,
 				4503E7B2284CDCC9004B1917 /* Typography.swift */,
 				4503E7B4284CE625004B1917 /* Icons.swift */,
+				45280F00286C212A00C4EAF1 /* Localization.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				4529AEAB283D63E500513023 /* ViewController.swift in Sources */,
 				4503E7B5284CE625004B1917 /* Icons.swift in Sources */,
 				45005E72286B9FDB00A192A5 /* TasksViewController.swift in Sources */,
+				45280F01286C212A00C4EAF1 /* Localization.swift in Sources */,
 				4529AEBF283D725300513023 /* TabBarViewController.swift in Sources */,
 				4529AEA7283D63E500513023 /* AppDelegate.swift in Sources */,
 				45C2729B284CA38900C3EB8B /* ColorPalette.swift in Sources */,
