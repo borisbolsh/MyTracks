@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.makeKeyAndVisible()
 		if #available(iOS 13.0, *) {
-			window?.backgroundColor = .systemBackground
+			window?.backgroundColor = .white
 		} else {
 			window?.backgroundColor = .white
 		}
